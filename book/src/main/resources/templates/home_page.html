@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome to the Bookstore</title>
+    <link rel="stylesheet" type="text/css" th:href="@{/css/home_page_style.css}">
+</head>
+<body>
+<div class="container">
+    <h1 th:text="${message}">BookStore</h1>
+    <p>This is the homepage of our bookstore web application.</p>
+    <p>Feel free to explore the site and discover amazing books!</p>
+    <div>
+        <a th:href="@{/books}" role="button">Book List</a>
+        <a th:href="@{/addForm}" role="button">Save Book</a>
+    </div>
+</div>
+</body>
+</html>
